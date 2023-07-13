@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+    integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    input[type=text], 
+    input[type=password], 
+    input[type=email] {
+      appearance: none;
+      border: none;
+      outline: none;
+      border-bottom: .2em solid #1d70ec;
+      background: rgba(#E91E63, .2);
+      border-radius: .2em .2em 0 0;
+      padding: .4em;
+      color: #000000;
+    }
+  </style>
+  <title>Form</title>
+</head>
+
+<body>
+  <div id="content">
+    <div>
+      <form method="post" action="" id="form">
+
+        <label>First Name</label>
+        <input id="fname" name="fname" type="text" placeholder="Enter Your firstName">
+        <span id="fname-msg"></span> <br><br>
+        <label>Last Name</label>
+        <input id="lname" name="lname" type="text" placeholder="Enter Your lastName">
+        <span id="lname-msg"></span> <br><br>
+        <label>Mobile Number</label>
+        <input id="mobileNumber" name="mobileNumber" type="text" placeholder="Enter Your Mobile Number">
+        <span id="mobilenumber-msg"></span> <br><br>
+        <label>Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter Your Email">
+        <span id="email-msg"></span> <br><br>
+        <label>Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter Your Password">
+        <span id="password-msg"></span> <br><br>
+
+        <input id="submit" type="submit" name="submit">
+
+      </form>
+    </div>
+
+</body>
+
+</html>
